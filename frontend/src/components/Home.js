@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-
+import Navbar from './Navbar';
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
     
-
+    <Navbar />
      <div className="container">
         <h1>Welcome Home </h1>
         </div> 

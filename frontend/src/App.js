@@ -12,12 +12,12 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar />
+      
       <Switch>
-        <Route exact path="/about" >   <> <About />  </></Route>
-        <Route exact path="/login" >   <> <Login />  </></Route>
-        <Route exact path="/signup" >  <> <Signup /> </></Route>
-        <Route exact path="/home" >        <> < Home />  </></Route>
+        <Route exact path="/about" >   <><Navbar /> <About />  </></Route>
+        <Route exact path="/login" >   <><Navbar /> <Login />  </></Route>
+        <Route exact path="/signup" >  <><Navbar /> <Signup /> </></Route>
+        <Route exact path="/home" >    <> < Home />  </></Route>
       </Switch>
     </Router>
     {/* <>

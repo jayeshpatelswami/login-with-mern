@@ -70,6 +70,7 @@ const Signup = () => {
                onChange={onchanged}
                value={information.email}
                name="email"
+               
              />
            </div>
            <div className="mb-3">
