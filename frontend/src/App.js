@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import { BrowserRouter as Router , Switch ,Route} from 'react-router-dom'
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Eroorpage from "./components/Eroorpage";
 function App() {
 
 
@@ -18,6 +19,8 @@ function App() {
         <Route exact path="/login" >   <><Navbar /> <Login />  </></Route>
         <Route exact path="/signup" >  <><Navbar /> <Signup /> </></Route>
         <Route exact path="/home" >    <> < Home />  </></Route>
+        <Route exact path="/" >    <> < Home />  </></Route>
+        <Route exact path="*" >    <> <Eroorpage />  </></Route>
       </Switch>
     </Router>
     {/* <>

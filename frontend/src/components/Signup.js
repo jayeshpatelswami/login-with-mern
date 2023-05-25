@@ -40,8 +40,10 @@ const Signup = () => {
        <>
 
 
-       <div className="container">
+       <div className="container  border border-3    my-5">
          <form onSubmit={handalsubmit}>
+          <fieldset>
+            <legend>SignUp Form</legend>
            <div className="mb-3">
              <label htmlFor="username" className="form-label">
                Name 
@@ -55,6 +57,7 @@ const Signup = () => {
                value={information.username}
                name="username"
                minLength={4}
+               
              />
            </div>
            <div className="mb-3">
@@ -66,11 +69,12 @@ const Signup = () => {
                className="form-control"
                id="email"
                aria-describedby="email"
-               required minLength={5}
+               required minLength={6}
                onChange={onchanged}
                value={information.email}
                name="email"
-               
+               autoComplete="name"
+             
              />
            </div>
            <div className="mb-3">
@@ -85,11 +89,14 @@ const Signup = () => {
                onChange={onchanged}
                value={information.password}
                name="password"
+                 autoComplete="current-password"
+               
              />
            </div>
            <button type="submit" className="btn btn-primary">
              Submit
            </button>
+           </fieldset>
          </form>
    
        </div>
